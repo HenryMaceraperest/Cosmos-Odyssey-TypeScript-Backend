@@ -2,9 +2,9 @@ import express, { Request, Response, NextFunction } from 'express';
 import serverless from 'serverless-http';
 const app = express();
 
-import timeRoute from '../src/routes/time';
-import flightRoutes from '../src/routes/flightRoutes';
-import searchResultRoutes from '../src/routes/searchResult';
+import timeRoute from '../routes/time';
+import flightRoutes from '../routes/flightRoutes';
+import searchResultRoutes from '../routes/searchResult';
 
 app.set('view engine', 'html');
 app.use(express.static('public'));
